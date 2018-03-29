@@ -1,0 +1,322 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "7_sopok.py",
+			"settings":
+			{
+				"buffer_size": 7168,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "#define <iostream>\nusing namespace std;\n \nint e=10;\n//dsfsdfsd\n/*\n\n\n\n*/\nint main(int argc, char const *argv[])\n{\n\tint age =0;\n\n\treturn 0;\n}",
+			"settings":
+			{
+				"buffer_size": 139,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "7 сопок мозьг",
+			"settings":
+			{
+				"buffer_size": 3996,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "MAP\n[X]плеер на 7 каналов\n[X]разумный рандомайзер\n[ ]работа по плейлисту если объявлено(разумный рандом для точного проигрывания всех композиций)\n[X]логирование\n[ ]прошивка контроллера (ардуино уно/микро/мега - определиться и купить для тестов)\n[ ]составление таблицы команд\n[ ]коммуникация ОТ контроллера:\n\t[ ]\tполучение уровня освещённости(байт, уровень включения регулируется софтом)\n\t[?]\tполучение температуры в ящике\n\t[ ]\tполучение состояния электрической цепи (220В, 12В)\n\t[ ]\tполучение состояния питания усилителей(биты в целом числе)\n\t[ ]\tполучение состояния питания ламп (биты в целом числе)\n\t[ ]\tполучение состояния режима диммера\n\t[ ]\tсервисные ответы \n[ ]коммуникация К контроллеру:\n\t[ ]\tвключение/отключение питания усилителей\n\t[ ]\tвключение/отключение питания ламп\n\t[ ]\tвключение/отключение режима диммера\n\t[ ]\tсервисные запросы\n[X]сетевая синхронизация (Dropbox)\n[ ]приложение для клиента\n[ ]графический интерфейс glide\n\n[ ]сборка в железе акустики\n[ ]сборка в железе контроллера и прошивка\n[ ]тесты на устойчивую работу ~по 18 часов (тестирование в ядре)\n\nпроизводить запросы к контроллеру не чаще чем раз за одну композцию\n\nкоммуникация ОТ контроллера:\n\tполучение уровня освещённости\n\tA\tbyte\n\tполучение температуры в ящике\n\tB\tbyte\n\tполучение состояния электрической цепи (220В, 12В)\n\tC,D,E\tbin 0bcde\n\tполучение состояния питания усилителей\n\tF\tint\n\tполучение состояния питания ламп\n\tG\tint\n\tполучение состояния режима диммера\n\tH\tint\n\tсервисные ответы \n\tK,L,M bin\nкоммуникация К контроллеру:\n\tвключение/отключение питания усилителей\n\tN\tint\n\tвключение/отключение питания ламп\n\tO\tint\n\tвключение/отключение режима диммера\n\tP\n\tсервисные запросы\n\tQ,R,S",
+			"file": "MAP",
+			"file_size": 2398,
+			"file_write_time": 131664545397662157,
+			"settings":
+			{
+				"buffer_size": 1661,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 94.0,
+		"last_filter": "ssc+",
+		"selected_items":
+		[
+			[
+				"ssc+",
+				"Set Syntax: C++"
+			]
+		],
+		"width": 497.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/buuart/Yandex.Disk/текcтовые файлы/моменты по организации жизни цеха.txt",
+		"/home/buuart/Yandex.Disk/текcтовые файлы/очередность.txt"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "7_sopok.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1752,
+								1752
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "7 сопок мозьг",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "MAP",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "7S0P0K.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

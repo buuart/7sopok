@@ -1,0 +1,136 @@
+'C:\\Users\\Risen\\Dropbox\\проекты Concrete Jungle\\06_оповещение в офис\\announcer\\meet_beg.wav'
+"Динамики (2- Realtek High Definition Audio)"
+
+
+def test():
+	os.system(r'start D:\VLC\vlc.exe file:///D:/Desktop/testDir/7sp/1.mp3 vlc://quit --no-video --aout=waveout --waveout-audio-device="Динамики (USB Audio Device) ($ffff,$ffff)"')
+	os.system(r'start D:\VLC\vlc.exe file:///D:/Desktop/testDir/7sp/2.mp3 vlc://quit --no-video --aout=waveout --waveout-audio-device="Динамики (2- USB Audio Device) ($ffff,$ffff)"')
+	os.system(r'start D:\VLC\vlc.exe file:///D:/Desktop/testDir/7sp/3.mp3 vlc://quit --no-video --aout=waveout --waveout-audio-device="Динамики (2- Realtek High Definition Audio) ($ffff,$ffff)"')
+
+
+
+def sec(text):
+	print('#'+''.center(60,'='))
+	print('#'+(' '+str(text)+' ').center(60,'='))
+	print('#'+''.center(60,'='))
+
+
+
+# os.system(r
+# 'start D:\VLC\vlc.exe 
+# file:///D:/Desktop/testDir/
+# 7sp - имя папки с файлом
+# / - разделитель
+# 1.mp3 - имя файла (1го из 4-ёх)
+# vlc://quit --no-video --aout=waveout --waveout-audio-device="Динамики (USB Audio Device) ($ffff,$ffff)"
+# ')
+
+
+
+import logging
+logger=logging.getLogger('7_sopok')
+logger.setLevel(logging.INFO)
+fh=logging.FileHandler('logger.log')
+formatter=logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fh.setFormatter(formatter)
+logger.addHandler(fh)
+logger.info('logging imported')
+import os
+logger.info('os imported')
+import time
+logger.info('time imported')
+import serial
+logger.info('serial imported')
+import random
+logger.info('random imported')
+from mutagen.mp3 import MP3
+logger.info('mutagen imported')
+
+Amplify_power_connection=0
+Light_Mode=0
+Light_power_connection=0
+sleep_delay=10
+tracklis=[]
+previous_light_state=0
+light_show_end={'time':0,'flag':True}
+logging.info('Programm started')
+
+
+
+while():
+	if(chk_lgt()):
+		Amplify_power_connection=0
+		Light_Mode=0
+		Light_power_connection=0
+		light_show_end['flag']=False
+		time.sleep(sleep_delay)
+		if (previous_light_state==0):
+			logging.info('morning')
+			previous_light_state=1
+	else:
+		if(previous_light_state==1):
+			logging.info('evening')
+			previous_light_state=0
+		Amplify_power_connection=1
+		time.sleep(2)
+		Light_power_connection=1
+		time.sleep(2)
+		if (light_show_end['flag']==False):
+			light_show_end['flag']=True
+			light_show_end['time']=int(time.time())+7200
+		if(light_show_end['time']<=time.time()):
+			Light_Mode=1
+			#logging.info('evening')
+		else:
+			Light_Mode=0
+			#logging.info('evening')
+		
+		# if(time.localtime().tm_hour==22 and (time.localtime().tm_minute>2 or time.localtime().tm_minute<30):
+		# 	light_show_end['flag']=False
+		#if tracklist exist - play(trackname)
+		#+ delay
+
+
+
+
+
+
+def sec_log(text):
+	logger.info('#'+''.center(15,'='))
+	logger.info('#'+(' '+str(text)+' ').center(15,'='))
+	logger.info('#'+''.center(15,'='))
+
+
+def sec(text):
+	print('#'+''.center(60,'='))
+	print('#'+(' '+str(text)+' ').center(60,'='))
+	print('#'+''.center(60,'='))
+
+for i in range(len(e)):
+	print(e.pop(ri(0,len(e)-1)))
+
+
+
+
+music_folder='D:/Desktop/testDir/Music/'
+device_name=[' vlc://quit --no-video --aout=waveout --waveout-audio-device="Динамики (USB Audio Device) ($ffff,$ffff)"',' vlc://quit --no-video --aout=waveout --waveout-audio-device="Динамики (2- USB Audio Device) ($ffff,$ffff)"',' vlc://quit --no-video --aout=waveout --waveout-audio-device="Динамики (2- Realtek High Definition Audio) ($ffff,$ffff)"']
+vlc_start_prefix='start D:/VLC/vlc.exe file:///'
+
+def play_track(track_folder):
+	trackname_list=os.listdir(music_folder+track_folder)
+	trackname_list=trackname_list[:len(device_name)]
+	max_duration=[]
+	for i in range(len(trackname_list)):
+		audio=MP3(music_folder+track_folder+'/'+trackname_list[i])
+		max_duration.append(audio.info.length)
+	sleep_after=max(max_duration)+2
+	for i in range(len(trackname_list)):
+		os.system(vlc_start_prefix+music_folder+track_folder+'/'+trackname_list[i]+device_name[i])
+	time.sleep(sleep_after)
+
+
+
+
+
+SERIAL=serial.Serial('COM4', 9600, timeout=1)
+e=SERIAL.readline()
